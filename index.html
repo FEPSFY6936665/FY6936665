@@ -45,7 +45,7 @@ p.ex1 {
 </style>
 
 <script type="text/javascript">
-        google.charts.load('current', { 'packages': ['scatter'] });
+        google.charts.load('current', { 'packages': ['corechart'] });
         google.charts.setOnLoadCallback(drawChart);
 
         function drawChart() {
@@ -69,13 +69,8 @@ p.ex1 {
                       };
                       var chart = new google.visualization.ScatterChart(document.getElementById('chart_div'));
                       chart.draw(data, options);
-
-                 
-            }
-            
-               
+            }     
     </script>
-    
   </head>
 
   
