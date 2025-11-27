@@ -9,7 +9,7 @@
       <h1><b>ENG0018 Computer Laboratory 2025/26</b></h1>
       <h2>Student URN: 6936665</h2>
   <hr>
-  <h2 style=”font-family:calibri:”><b>Conference paper: Bridge Deck Repairs</b></h2>
+  <h2 style=”font-family:calibri:”><b>Investigating the differences of star formations in Elliptical and Disc Galaxies and its effect on the possibility of life supporting environments</b></h2>
   <hr>
     
 
@@ -82,9 +82,10 @@
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
     const IntroductionCount = displayWordCount("Introduction_InText");
+    const WhatAreEllipticalAndDiscGalaxiesCount = displayWordCount("What are elliptical and disc galaxies?_InText");
     const AnalysisCount = displayWordCount("Analysis_InText");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount;
+    const totalWordCount = IntroductionCount + AnalysisCount + WhatAreEllipticalAndDiscGalaxiesCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
@@ -178,6 +179,9 @@ p.ex1 {
     <td><a href="#Introduction">Introduction</a></td>
   </tr>
   <tr>
+    <td><a href="#What are elliptical and disc galaxies?">What are elliptical and disc galaxies?</a></td>
+  </tr>
+  <tr>
     <td><a href="#Analysis and discussion">Analysis and discussion</a></td>
   </tr>
   <tr>
@@ -227,15 +231,40 @@ p.ex1 {
     <pre id="Introduction_InText">
   <p class="ex1">
   <pre>
-    Active Learning (Angluin, 1988, Cohn et al., 1994) is a paradigm where a concept is learnt by an intelligent machine through the
-    interaction of an oracle with the machine system, over a sequence of learning epochs. A distinctive component in an active system
-    is the querying strategy, used to sample candidate training instances from a pool and evaluate them for informativeness,
-    i.e., their potential to improve the classification model. Various strategies have been proposed including; Query by Committee (Seung et al., 1992),
-    Monte Carlo estimation (Roy and McCallum, 2001), uncertainty sampling (Lewis and Gale, 1994) and version space reduction (margin sampling) (Tong and Koller, 2001).
-    Irrespective of how the most informative pattern instances are chosen at each epoch they are presented for labeling, to a machine (database) or human oracle that has
-    knowledge of the class labels. After adding the newly labeled instances to the current training set, a revised model is subsequently induced.
-    A goal of this process is to achieve an efficient, incremental advancement of learning at each epoch. The process is continued until some stopping criterion has been met,
-    such as reaching a stage where information from the selected instances is contrary to the model, causing the classifier confidence to drop, as in Vlachos (2008).
+    The main discussion of life in the universe is often of planets and whether their
+    conditions are suitable for life. However, the type of galaxies that the planets reside
+    matters greatly too. Galaxies can be thought of as factories that create stars and
+    through the whole cycle of these star’s formation, life and death, enrich space with
+    heavy elements and create the conditions for potential planetary life. Today, the
+    observation of galaxies has advanced our understanding of cosmic history and
+    evolution of the universe including the emergence of life in our own Milky Way. This
+    article aims to compare two types of major galaxies, elliptical and disc (spiral)
+    galaxies, and investigate the differences as well as the evolutions of their star
+    formation behaviours. The article will also explore how their differences can
+    influence the formation of life supporting environments in the areas around them.
+    Firstly, the basics of star formations, elliptical and disc galaxies are described
+    followed by the history and processes of star formations in each galaxy. Finally, the
+    impact that each type of galaxy and their differing star formations have on
+    habitability is discussed.
+  </pre>
+  </pre>
+  </p>
+
+  <!WHAT ARE ELLIPTICAL AND DISC GALAXIES>
+    <h3 id="What are elliptical and disc galaxies?">What are elliptical and disc galaxies?</h3>
+    <pre id="What are elliptical and disc galaxies?_InText">
+  <p class="ex1">
+  <pre>
+    Galaxies are a collection of stars, planets, gas, and dust that are held
+    together by gravity with a supermassive black hole at the centre.
+    Elliptical galaxies are either round or oval and contain little amounts of cold
+    gas and dust.
+    
+    On the other hand, disc galaxies are flat rotating discs that contain rich
+    amounts of gas and dust. Spiral galaxies are a type of disc galaxy, named as
+    such due to their spiral arms emerging from the centre of the galaxy. In this
+    article, spiral galaxies will be the basis of discussion regarding disc galaxies.
+    These galaxies usually have an abundance of cold gas and dust.
   </pre>
   </pre>
   </p>
