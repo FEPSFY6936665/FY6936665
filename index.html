@@ -82,10 +82,11 @@
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
     const IntroductionCount = displayWordCount("Introduction_InText");
+    const WhatAreStars = displayWordCount("What are stars and how are they formed?_InText");
     const WhatAreEllipticalAndDiscGalaxiesCount = displayWordCount("What are elliptical and disc galaxies?_InText");
     const AnalysisCount = displayWordCount("Analysis_InText");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount + WhatAreEllipticalAndDiscGalaxiesCount;
+    const totalWordCount = IntroductionCount + WhatAreStars + AnalysisCount + WhatAreEllipticalAndDiscGalaxiesCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
@@ -179,6 +180,9 @@ p.ex1 {
     <td><a href="#Introduction">Introduction</a></td>
   </tr>
   <tr>
+    <td><a href="#What are stars and how are they formed?">What are stars and how are they formed?</a></td>
+  </tr>
+  <tr>
     <td><a href="#What are elliptical and disc galaxies?">What are elliptical and disc galaxies?</a></td>
   </tr>
   <tr>
@@ -230,9 +234,9 @@ p.ex1 {
     <h3 id="Introduction">Introduction</h3>
   <p class="ex1">
   <pre id="Introduction_InText">
-    Understanding a galaxy’s evolution and the type of galaxies that planets exist in matters greatly in interpreting
-    the required conditions for life supporting environments. Galaxies are often described as grand scale systems of gas,
-    dust, and gravity where these elements interact to create stars and enrich space with heavy elements upon their death.
+    Understanding a galaxy’s evolution and the type of galaxies that planets exist in matters greatly in interpreting the
+    required conditions for life supporting environments. Galaxies are often described as grand scale systems of gas, dust,
+    and gravity where these elements interact to create stars and enrich space with heavy elements upon their death.
     This influences a galaxy’s capability to host potential planetary systems filled with life. This article aims to study
     and compare two types of major galaxies, elliptical and spiral. These two types of galaxies display different evolutionary
     histories and star formation behaviours, which will be the primary focus regarding the galaxies. These differences are
@@ -242,6 +246,39 @@ p.ex1 {
   </pre>
   </p>
 
+  
+  <!WHAT ARE STARS AND HOW ARE THEY FORMED>
+    <h3 id="What are stars and how are they formed?">What are stars and how are they formed?</h3>
+  <p class="ex1">
+  <pre id="What are stars and how are they formed?_InText">
+    As outlined above, an initial overview of stars and their formations will be described, and this is important as it will make
+    the following parts of this article easier to understand.
+
+    Stars are made up of primarily hydrogen alongside helium and other heavier elements, bound by gravity to form extremely hot
+    spheres of gas with their life cycles, determined by their mass, ranging between a few million to trillions of years (NASA, 2025b).
+
+    The formation/birth of a star is thought to occur (NASA, 2025b) within cold molecular clouds (large regions of dense
+    concentrations of cold gas and dust that can span hundreds of light years) where local concentrations of gas and dust accumulate
+    mass until these dense clumps collapse under their own increasing gravitational strength. As this contraction due to gravity
+    continues (McKee and Ostriker, 2007), the temperature of the collapsing material increases rapidly under friction and compression
+    until eventually a protostar is developed. A protostar is a “baby star” (NASA, 2025b, para. 3).
+
+    The gravitational collapse of the protostar continues (NASA, 2025b, para. 4) and when the appropriate conditions of extreme
+    temperature and pressure are achieved inside the protostar’s core, nuclear fusion ignites (McKee and Ostriker, 2007). This results
+    in a release of energy that stabilises the star from further gravitational collapse. According to NASA (2025b, para. 5) these stars
+    are “stably undergoing nuclear fusion of hydrogen into helium” and are called “main sequence stars”, which is typically what stars
+    are pictured as.
+
+    Furthermore, the rate of star formation depends strongly on the availability of cold gas and dust within a galaxy (Kennicutt, 1998)
+    indicating star formation is that galaxies that have an abundance of cold gas and dust are more likely to sustain higher rates of active
+    star formations/form stars actively compared to galaxies with lesser amounts of cold gas and dust.
+
+    This is essential in understanding why the distinctions in elliptical and spiral galaxies result in contrasting star populations and
+    evolutionary pathways, as will be discussed in the following sections.
+  </pre>
+  </p>
+
+  
   <!WHAT ARE ELLIPTICAL AND DISC GALAXIES>
     <h3 id="What are elliptical and disc galaxies?">What are elliptical and disc galaxies?</h3>
   <p class="ex1">
