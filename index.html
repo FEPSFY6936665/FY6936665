@@ -82,11 +82,13 @@
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
     const IntroductionCount = displayWordCount("Introduction_InText");
-    const WhatAreStars = displayWordCount("What are stars and how are they formed?_InText");
-    const WhatAreEllipticalAndDiscGalaxiesCount = displayWordCount("What are elliptical and disc galaxies?_InText");
+    const StarsCount = displayWordCount("Stars and their Formation_InText");
+    const EllipticalAndSpiralGalaxiesCount = displayWordCount("Elliptical and Spiral Galaxies_InText");
+    const StarFormationsCount = displayWordCount("Star Formations in the Galaxies_InText");
     const AnalysisCount = displayWordCount("Analysis_InText");
+    const ConclusionCount = displayWordCount("Conclusion_InText");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + WhatAreStars + AnalysisCount + WhatAreEllipticalAndDiscGalaxiesCount;
+    const totalWordCount = IntroductionCount + StarsCount + AnalysisCount + EllipticalAndSpiralGalaxiesCount + StarFormationsCount + ConclusionCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
@@ -180,10 +182,16 @@ p.ex1 {
     <td><a href="#Introduction">Introduction</a></td>
   </tr>
   <tr>
-    <td><a href="#What are stars and how are they formed?">What are stars and how are they formed?</a></td>
+    <td><a href="#Stars and their Formation">Stars and their Formation</a></td>
   </tr>
   <tr>
-    <td><a href="#What are elliptical and disc galaxies?">What are elliptical and disc galaxies?</a></td>
+    <td><a href="#Elliptical and Spiral Galaxies">Elliptical and Spiral Galaxies</a></td>
+  </tr>
+  <tr>
+    <td><a href="#Star Formations in the Galaxies">Star Formations in the Galaxies</a></td>
+  </tr>
+  <tr>
+    <td><a href="#Conclusion">Conclusion</a></td>
   </tr>
   <tr>
     <td><a href="#Analysis and discussion">Analysis and discussion</a></td>
@@ -248,9 +256,9 @@ p.ex1 {
 
   
   <!WHAT ARE STARS AND HOW ARE THEY FORMED>
-    <h3 id="What are stars and how are they formed?">What are stars and how are they formed?</h3>
+    <h3 id="Stars and their Formation">Stars and their Formation</h3>
   <p class="ex1">
-  <pre id="What are stars and how are they formed?_InText">
+  <pre id="Stars and their Formation_InText">
     As outlined above, an initial overview of stars and their formations will be described, and this is important as it will make
     the following parts of this article easier to understand.
 
@@ -279,10 +287,10 @@ p.ex1 {
   </p>
 
   
-  <!WHAT ARE ELLIPTICAL AND DISC GALAXIES>
-    <h3 id="What are elliptical and disc galaxies?">What are elliptical and disc galaxies?</h3>
+  <!WHAT ARE ELLIPTICAL AND SPIRAL GALAXIES>
+    <h3 id="Elliptical and Spiral Galaxies">Elliptical and Spiral galaxies?</h3>
   <p class="ex1">
-  <pre id="What are elliptical and disc galaxies?_InText">
+  <pre id="Elliptical and Spiral Galaxies_InText">
     Galaxies are a collection of stars, planets, gas, and dust that are held
     together by gravity with a supermassive black hole at the centre.
     Elliptical galaxies are either round or oval and contain little amounts of cold
@@ -296,6 +304,23 @@ p.ex1 {
   </pre>
   </p>
 
+  <!Star Formations in the Galaxies>
+    <h3 id="Star Formations in the Galaxies">Star Formations in the Galaxies</h3>
+  <p class="ex1">
+  <pre id="Star Formations in the Galaxies_InText">
+    
+  </pre>
+  </p>
+
+
+ <!CONCLUSION>
+    <h3 id="Conclusion">Conclusion</h3>
+  <p class="ex1">
+  <pre id="Conclusion_InText">
+    
+  </pre>
+  </p>
+  
 <!ANALYSIS AND DISCUSSION>
     <h3 id="Analysis and discussion">Analysis and discussion</h3>
     <pre id="Analysis_InText">
