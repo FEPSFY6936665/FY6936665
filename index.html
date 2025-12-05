@@ -130,35 +130,6 @@ p.ex1 {
   margin-left: 250px;
 }
 </style>
-
-<script type="text/javascript">
-        google.charts.load('current', { 'packages': ['corechart'] });
-        google.charts.setOnLoadCallback(drawChart);
-
-        function drawChart() {
-          var data = new google.visualization.DataTable();
-          data.addColumn('number', 'Age');
-          data.addColumn('number', 'Salary');
-
-          data.addRows([
-            [25, 40000],
-            [30, 50000],
-            [35, 60000],
-            [40, 75000],
-            [45, 80000],
-            [50, 90000]
-          ]);
-
-          var options = {
-            title: 'Age vs. Salary',
-            hAxis: { title: 'Age' },
-            vAxis: { title: 'Salary' }
-          };
-
-          var chart = new google.visualization.ScatterChart(document.getElementById('chart_div'));
-          chart.draw(data, options);
-      }
-    </script>
   </head>
 
   
@@ -334,37 +305,6 @@ p.ex1 {
   
     <div id="chart_div" style="width: 900px; height: 500px;"></div>
     
-<!Table 1: Data on cost and lifespan of bridge repairs>
-  <p class="ex1">
-  <pre>
-    <table>
-<tr>
-    <th>£ Cost of repairs</th>
-    <th>Lifespan of repairs (years)</th>
-</tr>
-<tr>
-    <td>0.7 m</td>
-    <td>2</td>
-</tr>
-<tr>
-    <td>3.3 m</td>
-    <td>4</td>
-</tr>
-<tr>
-    <td>2.6 m</td>
-    <td>5</td>
-</tr>
-<tr>
-    <td>17.4 m</td>
-    <td>7</td>
-</tr>
-<tr>
-    <td>8.8 m</td>
-    <td>9</td>
-</tr>
-</table>
-  </pre>
-  </p>
 
 <!REFERENCES>
     <h3 id="References">References</h3>
