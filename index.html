@@ -88,8 +88,13 @@
     const AnalysisCount = displayWordCount("Analysis_InText");
     const ConclusionCount = displayWordCount("Conclusion_InText");
     const IntroductHead = displayWordCount("Introduction");
+    const AnalysisHead = displayWordCount("Analysis and Discussion");
+    const StarFormHead = displayWordCount("Stars and their Formation");
+    const EllSpirHead = displayWordCount("Elliptical and Spiral Galaxies");
+    const FormationsInHead = displayWordCount("Star Formations in the Galaxies");
+    const ConcHead = displayWordCount("Conclusion");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + StarsCount + AnalysisCount + EllipticalAndSpiralGalaxiesCount + StarFormationsCount + ConclusionCount + IntroductHead;
+    const totalWordCount = IntroductionCount + StarsCount + AnalysisCount + EllipticalAndSpiralGalaxiesCount + StarFormationsCount + ConclusionCount + IntroductHead + AnalysisHead + StarFormHead + EllSpirHead + FormationsInHead + ConcHead;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
