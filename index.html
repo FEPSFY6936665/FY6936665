@@ -93,8 +93,9 @@
     const EllSpirHead = displayWordCount("Elliptical and Spiral Galaxies");
     const FormationsInHead = displayWordCount("Star Formations in the Galaxies");
     const ConcHead = displayWordCount("Conclusion");
+    const Figure = displayWordCount("Figure 1");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + StarsCount + AnalysisCount + EllipticalAndSpiralGalaxiesCount + StarFormationsCount + ConclusionCount + IntroductHead + AnalysisHead + StarFormHead + EllSpirHead + FormationsInHead + ConcHead;
+    const totalWordCount = IntroductionCount + StarsCount + AnalysisCount + EllipticalAndSpiralGalaxiesCount + StarFormationsCount + ConclusionCount + IntroductHead + AnalysisHead + StarFormHead + EllSpirHead + FormationsInHead + ConcHead + Figure;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
@@ -263,8 +264,8 @@ p, pre, {
             alt="Spiral Galaxy M101 (Pinwheel Galaxy)"
             style="width: 100%; height: auto; border: 1px solid #ccc; border-radius: 4px;"
         >
-        <figcaption style="font-size: 0.85em; margin-top: 6px;">
-            <b>Figure 1</b> Spiral galaxy M101 (Pinwheel Galaxy) <a href="#NASA2024b">NASA (2024b)</a>
+        <figcaption id="Figure 1" style="font-size: 0.85em; margin-top: 6px;">
+            <b>Figure 1</b> Spiral galaxy M101 (Pinwheel Galaxy) <a href="#NASA2024b">(NASA, 2024b)</a>
         </figcaption>
     </figure>
 </div>
